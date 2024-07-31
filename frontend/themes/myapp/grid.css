@@ -1,0 +1,24 @@
+.grid.scheduler-grid .hidden-input:checked~.custom-input {
+    border: 2px solid #326f70;
+}
+
+.grid.scheduler-grid th .hidden-input:checked~.custom-input {
+    border: 2px solid white;
+}
+@media (max-width: 800px) {
+    .grid.scheduler-grid {
+        width: 800px !important;
+        height: calc(100vh - 200px) !important;
+        overflow: scroll;
+    }
+    vaadin-app-layout {
+        padding-right: 15px;
+    }
+}
+.grid.scheduler-grid .tui-grid-lside-area, .grid.scheduler-grid .tui-grid-body-area, .grid.scheduler-grid .tui-grid-content-area, .grid.scheduler-grid .tui-grid-layer-state  {
+    z-index: 0 !important;
+}
+
+.grid.scheduler-grid .tui-grid-content-area {
+    min-height: calc(100vh - 208px);
+}
